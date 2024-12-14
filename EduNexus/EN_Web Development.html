@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <link rel="stylesheet" href="EN_WebDevelopment.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">EduNexus</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#toch2">Lessons</a></li>
+        </ul>
+        
+        <div class="cta">
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+        <div class="profile-section">
+            <a href="#" class="login-btn">Login</a>
+            <div class="profile-icon">
+                <img src="Profile-EN.png" alt="Profile">
+                <div class="dropdown-menu">
+                    <a href="#">Dashboard</a>
+                    <a href="#">My Courses</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+    <header id="hero-section" class="hero-section">
+        <h1>Welcome to Web Development</h1>
+        <p>Unlock the art of web development</p>
+    </header>
+
+    <section class="toc">
+        <h2 id="toch2" class="toch2">Table of Contents</h2>
+        <ul class="black">
+            <li><a href="#element-header">The &lt;header&gt; Element</a></li>
+            <li><a href="#element-section">The &lt;section&gt; Element</a></li>
+            <li><a href="#element-article">The &lt;article&gt; Element</a></li>
+            <li><a href="#element-figure">The &lt;figure&gt; Element</a></li>
+            <li><a href="#element-footer">The &lt;footer&gt; Element</a></li>
+            <li><a href="#element-nav">The &lt;nav&gt; Element</a></li>
+            <li><a href="#element-form">The &lt;form&gt; Element</a></li>
+            <li><a href="#element-input">The &lt;input&gt; Element</a></li>
+            <li><a href="#element-div">The &lt;div&gt; Element</a></li>
+            <li><a href="#element-span">The &lt;span&gt; Element</a></li>
+            <li><a href="#element-h1">The &lt;h1&gt; Element</a></li>
+            <li><a href="#element-p">The &lt;p&gt; Element</a></li>
+            <li><a href="#element-a">The &lt;a&gt; Element</a></li>
+            <li><a href="#element-button">The &lt;button&gt; Element</a></li>
+        </ul>
+    </section>
+
+    <!-- HTML Element Sections -->
+
+    <section id="element-head">
+        <h2>The &lt;head&gt; Element</h2>
+        <p>The &lt;head&gt; element contains meta-information about the document, such as its title, character set, stylesheets, and scripts.</p>
+        <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="EduNexus.css"&gt;
+&lt;/head&gt;</code></pre>
+        <!-- Interactive Playground for <head> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-head">&lt;head&gt;...&lt;/head&gt;</textarea>
+            <button onclick="runCode('head')">Run</button>
+            <div id="output-head" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-title">
+        <h2>The &lt;title&gt; Element</h2>
+        <p>The &lt;title&gt; element defines the title of the document, which is displayed in the browser's title bar or tab.</p>
+        <pre><code>&lt;title&gt;EduNexus - Learn Web Development&lt;/title&gt;</code></pre>
+        <!-- Interactive Playground for <title> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-title">&lt;title&gt;...&lt;/title&gt;</textarea>
+            <button onclick="runCode('title')">Run</button>
+            <div id="output-title" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-link">
+        <h2>The &lt;link&gt; Element</h2>
+        <p>The &lt;link&gt; element defines the relationship between the current document and an external resource, typically used to link to external stylesheets.</p>
+        <pre><code>&lt;link rel="stylesheet" href="EduNexus.css"&gt;</code></pre>
+        <!-- Interactive Playground for <link> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-link">&lt;link&gt;...&lt;/link&gt;</textarea>
+            <button onclick="runCode('link')">Run</button>
+            <div id="output-link" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-header">
+        <h2>The &lt;header&gt; Element</h2>
+        <p>The &lt;header&gt; element represents introductory content or a set of navigational links for a section or page.</p>
+        <pre><code>&lt;header&gt;
+        &lt;h1&gt;Welcome to EduNexus&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="#home"&gt;Home&lt;/a&gt; | &lt;a href="#courses"&gt;Courses&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;</code></pre>
+        <!-- Interactive Playground for <header> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-header">&lt;header&gt;...&lt;/header&gt;</textarea>
+            <button onclick="runCode('header')">Run</button>
+            <div id="output-header" class="output"></div>
+        </div>
+    </section>
+    
+    <section id="element-article">
+        <h2>The &lt;article&gt; Element</h2>
+        <p>The &lt;article&gt; element represents independent content, such as a blog post, news article, or forum post.</p>
+        <pre><code>&lt;article&gt;
+        &lt;h2&gt;How to Learn Web Development&lt;/h2&gt;
+        &lt;p&gt;Web development involves creating websites and web applications.&lt;/p&gt;
+    &lt;/article&gt;</code></pre>
+        <!-- Interactive Playground for <article> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-article">&lt;article&gt;...&lt;/article&gt;</textarea>
+            <button onclick="runCode('article')">Run</button>
+            <div id="output-article" class="output"></div>
+        </div>
+    </section>
+    
+    <section id="element-section">
+        <h2>The &lt;section&gt; Element</h2>
+        <p>The &lt;section&gt; element defines a thematic grouping of content, typically with a heading.</p>
+        <pre><code>&lt;section&gt;
+        &lt;h2&gt;Why Choose EduNexus?&lt;/h2&gt;
+        &lt;p&gt;EduNexus offers a comprehensive platform for learning web development.&lt;/p&gt;
+    &lt;/section&gt;</code></pre>
+        <!-- Interactive Playground for <section> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-section">&lt;section&gt;...&lt;/section&gt;</textarea>
+            <button onclick="runCode('section')">Run</button>
+            <div id="output-section" class="output"></div>
+        </div>
+    </section>
+    
+    <section id="element-figure">
+        <h2>The &lt;figure&gt; Element</h2>
+        <p>The &lt;figure&gt; element is used for content that is referenced from the main flow of the document, like an image or diagram.</p>
+        <pre><code>&lt;figure&gt;
+        &lt;img src="webdev.jpg" alt="Web Development"&gt;
+        &lt;figcaption&gt;Web Development Diagram&lt;/figcaption&gt;
+    &lt;/figure&gt;</code></pre>
+        <!-- Interactive Playground for <figure> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-figure">&lt;figure&gt;...&lt;/figure&gt;</textarea>
+            <button onclick="runCode('figure')">Run</button>
+            <div id="output-figure" class="output"></div>
+        </div>
+    </section>
+    
+    <section id="element-footer">
+        <h2>The &lt;footer&gt; Element</h2>
+        <p>The &lt;footer&gt; element represents the footer of a section or page, containing information like the author or related links.</p>
+        <pre><code>&lt;footer&gt;
+        &lt;p&gt;© 2024 EduNexus. All rights reserved.&lt;/p&gt;
+        &lt;nav&gt;
+            &lt;a href="#privacy"&gt;Privacy&lt;/a&gt; | &lt;a href="#terms"&gt;Terms&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;</code></pre>
+        <!-- Interactive Playground for <footer> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-footer">&lt;footer&gt;...&lt;/footer&gt;</textarea>
+            <button onclick="runCode('footer')">Run</button>
+            <div id="output-footer" class="output"></div>
+        </div>
+    </section>
+    <section id="element-input">
+        <h2>The &lt;input&gt; Element</h2>
+        <p>The &lt;input&gt; element is used to create interactive controls for forms. Common attributes include type, id, name, and class.</p>
+        <pre><code>&lt;input type="text" id="username" name="username" class="input-text"&gt;</code></pre>
+        <!-- Interactive Playground for <input> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-input">&lt;input&gt;...&lt;/input&gt;</textarea>
+            <button onclick="runCode('input')">Run</button>
+            <div id="output-input" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-div">
+        <h2>The &lt;div&gt; Element</h2>
+        <p>The &lt;div&gt; element is a block-level container used to group elements for styling purposes. It is one of the most commonly used elements in web development.</p>
+        <pre><code>&lt;div class="container"&gt;
+    &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        <!-- Interactive Playground for <div> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-div">&lt;div&gt;...&lt;/div&gt;</textarea>
+            <button onclick="runCode('div')">Run</button>
+            <div id="output-div" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-span">
+        <h2>The &lt;span&gt; Element</h2>
+        <p>The &lt;span&gt; element is an inline container used to group text or inline elements. It is often used for applying styles or scripts to parts of text.</p>
+        <pre><code>&lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+        <!-- Interactive Playground for <span> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-span">&lt;span&gt;...&lt;/span&gt;</textarea>
+            <button onclick="runCode('span')">Run</button>
+            <div id="output-span" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-h1">
+        <h2>The &lt;h1&gt; Element</h2>
+        <p>The &lt;h1&gt; element represents a top-level heading in an HTML document. It is typically used as the main title or heading for a section of content.</p>
+        <pre><code>&lt;h1&gt;Welcome to EduNexus&lt;/h1&gt;</code></pre>
+        <!-- Interactive Playground for <h1> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-h1">&lt;h1&gt;...&lt;/h1&gt;</textarea>
+            <button onclick="runCode('h1')">Run</button>
+            <div id="output-h1" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-p">
+        <h2>The &lt;p&gt; Element</h2>
+        <p>The &lt;p&gt; element represents a paragraph of text. It is a block-level element typically used for structuring text content in a document.</p>
+        <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+        <!-- Interactive Playground for <p> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-p">&lt;p&gt;...&lt;/p&gt;</textarea>
+            <button onclick="runCode('p')">Run</button>
+            <div id="output-p" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-a">
+        <h2>The &lt;a&gt; Element</h2>
+        <p>The &lt;a&gt; element represents a hyperlink, linking to another page or resource. Common attributes include href, target, and rel.</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+        <!-- Interactive Playground for <a> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-a">&lt;a&gt;...&lt;/a&gt;</textarea>
+            <button onclick="runCode('a')">Run</button>
+            <div id="output-a" class="output"></div>
+        </div>
+    </section>
+
+    <section id="element-button">
+        <h2>The &lt;button&gt; Element</h2>
+        <p>The &lt;button&gt; element represents a clickable button, which can be used to submit forms or trigger events in the browser.</p>
+        <pre><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+        <!-- Interactive Playground for <button> -->
+        <div class="playground">
+            <h3>Try it Yourself</h3>
+            <textarea id="code-editor-button">&lt;button&gt;...&lt;/button&gt;</textarea>
+            <button onclick="runCode('button')">Run</button>
+            <div id="output-button" class="output"></div>
+        </div>
+    </section>
+
+    <script src="EN_WebDevelopment.js"></script>
+</body>
+</html>
